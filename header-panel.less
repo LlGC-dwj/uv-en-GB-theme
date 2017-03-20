@@ -13,7 +13,7 @@
               .first {
                 height: 30px;
                 width: 28px;
-                background-image: url('@{theme-img-path}first.png');
+                background-image: url('@{theme-img-path}first.png') !important;
                 background-repeat: no-repeat;
                 background-color:transparent;
                 background-position: 4px 8px;
@@ -21,7 +21,7 @@
               .prev {
                 height: 30px;
                 width: 28px;
-                background-image: url('@{theme-img-path}prev.png');
+                background-image: url('@{theme-img-path}prev.png') !important;
                 background-repeat: no-repeat;
                 background-color:transparent;
                 background-position: 4px 8px;
@@ -33,7 +33,7 @@
               .next {
                 height: 30px;
                 width: 28px;
-                background-image: url('@{theme-img-path}next.png');
+                background-image: url('@{theme-img-path}next.png') !important;
                 background-repeat: no-repeat;
                 background-color:transparent;
                 background-position: 4px 8px;
@@ -41,9 +41,9 @@
               .last {
                 height: 30px;
                 width: 28px;
-                background-image: url('@{theme-img-path}last.png') ;
+                background-image: url('@{theme-img-path}last.png') !important;
                 background-repeat: no-repeat;
-                background-color: transparent !important;
+                background-color: transparent;
                 background-position: 4px 8px;
               }
             }
@@ -74,6 +74,7 @@
             padding: 0.15em;
             &:hover {
                 text-decoration: none;
+                color: #000;
             }
         }
       }
