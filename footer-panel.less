@@ -1,23 +1,34 @@
 @theme-img-path: '../../../themes/@{theme}/img/';
 
 #app {
-    .footerPanel{
-        // .searchPager {
-        //     .controls{
-        //         .searchResultsInfo{
-        //             width: 337px;
-        //         }
-        //     }
-        // }
-        .options {
-          a {
-            &.fullScreen{
-              .icon-right(url('@{theme-img-path}fullscreen.png'), 21px, 30px);
-            }
-            &.exitFullscreen{
-              .icon-right(url('@{theme-img-path}exit_fullscreen.png'), 21px, 30px);
-            }
-          }
+  .footerPanel{
+    .searchResults {
+      .searchResultPlacemarker {
+        background: url('@{theme-img-path}placemarker_down.png');
+        width: 20px;
+        &.hover{
+            background: url('@{theme-img-path}placemarker_down_hover.png');
         }
+
+        &.current{
+            background: url('@{theme-img-path}placemarker_down_hover.png');
+        }
+      }
+      .positionPlacemarker {
+        background: url('@{theme-img-path}placemarker_up.png');
+        width: 20px;
+        margin: 2px 0 0 -10px;
+      }
     }
+    .options {
+      a {
+        &.fullScreen{
+          .icon-right(url('@{theme-img-path}fullscreen.png'), 21px, 30px);
+        }
+        &.exitFullscreen{
+          .icon-right(url('@{theme-img-path}exit_fullscreen.png'), 21px, 30px);
+        }
+      }
+    }
+  }
 }
